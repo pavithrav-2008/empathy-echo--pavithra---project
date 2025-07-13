@@ -1,0 +1,47 @@
+<!-- File: admin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Admin Login - Empathy Echo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="animated-bg">
+    <span></span><span></span><span></span><span></span><span></span>
+    <span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div id="auth-container">
+    <form id="admin-login-form">
+      <h2>Admin Login</h2>
+      <label>Username:
+        <input type="text" id="admin-login-username" required />
+      </label>
+      <label>Password:
+        <input type="password" id="admin-login-password" required />
+      </label>
+      <button class="auth-btn" type="submit">Login</button>
+      <a href="#" id="admin-show-signup">No account? Sign Up</a>
+    </form>
+
+    <form id="admin-signup-form" class="hidden">
+      <h2>Admin Sign Up</h2>
+      <label>Email:
+        <input type="email" id="admin-signup-email" required />
+      </label>
+      <label>Username:
+        <input type="text" id="admin-signup-username" required />
+      </label>
+      <label>Password:
+        <input type="password" id="admin-signup-password" required />
+      </label>
+      <button class="auth-btn" type="submit">Sign Up</button>
+      <a href="#" id="admin-show-login">Already an admin? Login</a>
+    </form>
+  </div>
+
+  <script src="admin-auth.js"></script>
+</body>
+</html>

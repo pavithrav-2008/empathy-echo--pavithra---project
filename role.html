@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Empathy Echo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>Empathy Echo</header>
+
+  <!-- Sticky logout -->
+  <div class="sticky-logout">
+    <button class="logout-btn" onclick="logoutUser()">Logout</button>
+  </div>
+
+  <main>
+    <div id="chat-container" class="view-chat"></div>
+
+    <div id="journal-container" class="view-journal hidden">
+      <h2>Your Mood Journal</h2>
+      <ul id="journal-log"></ul>
+    </div>
+
+    <div class="controls">
+      <button id="toggle-btn">View Journal</button>
+    </div>
+
+    <div class="input-container view-chat">
+      <input id="user-input" type="text" placeholder="How are you feeling?" autocomplete="off" />
+      <button id="send-btn">Send</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

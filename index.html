@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Choose Role</title>
+  <script src="https://cdn.jsdelivr.net/npm/sentiment@5.0.1/build/sentiment.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      font-family: 'Poppins', sans-serif;
+    }
+    .role-container {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    .role-container h1 {
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    .role-container button {
+      padding: 0.75rem 2rem;
+      margin: 0.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      background: #6c63ff;
+      color: white;
+      transition: background 0.3s ease;
+    }
+    .role-container button:hover {
+      background: #574fbd;
+    }
+  </style>
+</head>
+<body>
+  <div class="role-container">
+    <h1 class="intro-title">Empathy Echo</h1>
+    <p class="tagline">A Journey Through Emotions</p>
+    <h1>Select Role</h1>
+    <button onclick="location.href='login.html'">User</button>
+    <button onclick="location.href='admin.html'">Admin</button>
+  </div>
+</body>
+</html>
